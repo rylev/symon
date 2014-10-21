@@ -19,12 +19,15 @@ Do they all mean the same thing? When can should I use one versuses the others? 
 
 No worries! The community at Symon has your back!
 
-With Symon you can:
+With Symon you will be able to:
 
 * See example usage
 * Read an explanation of which words to use in which context
 * See which words are more formal than others
 * Ask questions to native speakers about usage
+* See recent newspaper articles featuring the word
+* See recent tweets featuring the word
+* See usage statistics from Google
 * And much more!
 
 ## Development
