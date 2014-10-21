@@ -16,25 +16,25 @@ ActiveRecord::Schema.define(version: 20141021002033) do
   create_table "examples", force: true do |t|
     t.text     "text",        null: false
     t.text     "translation", null: false
-    t.integer  "words_id",    null: false
+    t.integer  "word_id",     null: false
     t.integer  "synonym_id",  null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "examples", ["synonym_id"], name: "index_examples_on_synonym_id", using: :btree
-  add_index "examples", ["words_id"], name: "index_examples_on_words_id", using: :btree
+  add_index "examples", ["word_id"], name: "index_examples_on_word_id", using: :btree
 
-  create_table "synonym", force: true do |t|
+  create_table "meanings", force: true do |t|
     t.string   "translation", null: false
-    t.text     "description"
+    t.string   "example",     null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "words", force: true do |t|
     t.string   "text",       null: false
-    t.integer  "synonym_id", null: false
+    t.integer  "meaning_id", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

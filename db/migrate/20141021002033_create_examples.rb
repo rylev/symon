@@ -3,7 +3,7 @@ class CreateExamples < ActiveRecord::Migration
     create_table :examples do |t|
       t.text :text, null: false
       t.text :translation, null: false
-      t.references :words, null: false, index: true
+      t.references :word, null: false, index: true
       t.references :synonym, null: false, index: true
 
       t.timestamps

@@ -3,5 +3,5 @@ class Word < ActiveRecord::Base
 
   validates :text, presence: true
 
-  has_many :words, through: :synonym
+  has_many :words, through: :meanings
 end
