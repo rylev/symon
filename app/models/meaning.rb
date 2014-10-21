@@ -1,7 +1,8 @@
-class Synonym < ActiveRecord::Base
+class Meaning < ActiveRecord::Base
   has_many :words
 
   validates :translation, uniquness: true, presence: true
+  validates :example, presence: true
 
   before_validation :normalize_translation
 
