@@ -11,6 +11,8 @@ gem 'coffee-rails', '~> 4.0.0'
 
 group :test do
   gem 'rspec-rails'
+  gem 'minitest'
+  gem 'shoulda'
 end
 
 group :development do

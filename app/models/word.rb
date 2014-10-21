@@ -1,5 +1,5 @@
 class Word < ActiveRecord::Base
-  belongs_to :synonym
+  belongs_to :meaning
 
   validates :text, presence: true
 
